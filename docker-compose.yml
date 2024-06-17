@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    command: tail -f /dev/null
+    ports:
+      - "8080:8080"  # Ajusta los puertos según los que use tu aplicación
+    volumes:
+      - .:/app
+      - go_mod:/go/pkg/mod
+
+volumes:
+  go_mod:

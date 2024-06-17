@@ -1,0 +1,5 @@
+# Usando Docker directamente
+docker exec -it <container_id> go get github.com/example/newlib
+
+# Usando Docker Compose
+docker-compose exec app go get github.com/example/newlib
